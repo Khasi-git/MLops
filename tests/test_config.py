@@ -13,3 +13,4 @@ def test_generic():
     with pytest.raises(customError):
         if a not in range(10,20):
             raise customError
+
