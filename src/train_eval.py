@@ -43,9 +43,9 @@ def train_evaluate(config_path):
 
     lr.fit(train_x,train_y)
 
-    predictied_qual = lr.predict(test_x)
+    predicted_qual = lr.predict(test_x)
 
-    (rmse, mae, r2) = eval_metrices(test_y, predicted_qualities)
+    (rmse, mae, r2) = eval_metrices(test_y, predicted_qual)
 
 
     print("Elasticnet model (alpha=%f, l1_ratio=%f):" % (alpha, l1_ratio))
