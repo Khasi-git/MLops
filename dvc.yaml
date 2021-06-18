@@ -17,7 +17,7 @@ stages:
     - data/processed/test_winequality.csv
   
   train_data:
-    cmd: python src/train_eval.py --config=pramas.yaml
+    cmd: python src/train_eval.py --config=params.yaml
     deps:
     - data/processed/train_winequality.csv
     - data/processed/test_winequality.csv
